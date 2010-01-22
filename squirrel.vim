@@ -1,7 +1,4 @@
 " Squirrel syntax file
-" Language: Squirrel
-" Maintainer: Mikael Svantesson <svantesson@gmail.com>
-" Last Change: 2005 Jul 12
 
 if version < 600
 	syntax clear

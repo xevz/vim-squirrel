@@ -6,10 +6,6 @@ elseif exists("b:current_syntax")
 	finish
 endif
 
-if !exists("main_syntax")
-	let main_syntax = "squirrel"
-endif
-
 " Keywords
 syn keyword squirrelKeywords break case catch clone continue default delegate delete else for foreach if in local null resume return switch this throw try typeof while parent yield constructor vargc vargv intanceof
 syn keyword squirrelBuiltins array seterrorhandler setdebughook enabledebuginfo getroottable assert print compilestring collectgarbage type getstackinfos newthread
@@ -89,8 +85,4 @@ HiLink squirrelParent Delimiter
 delcommand HiLink
 
 let b:current_syntax = "squirrel"
-
-if main_syntax == "squirrel"
-	unlet main_syntax
-endif
 

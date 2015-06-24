@@ -26,8 +26,8 @@ syn region squirrelString start=+@"+ skip=+\\"+ end=+"+ oneline
 syn region squirrelString start=+@" + skip=+\\"+ end=+ "+ contains=squirrelEscape
 
 " Comments
-syn region squirrelComment start="/\*" end="\*/"
-syn match squirrelComment "//.\{-}\(?>\|$\)\@="
+syn region squirrelComment start="/\*" end="\*/" contains=@Spell
+syn match squirrelComment "//.\{-}\(?>\|$\)\@=" contains=@Spell
 
 " Numbers
 syn match squirrelNumber "-\=\<\d\+\>"
